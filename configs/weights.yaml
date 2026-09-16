@@ -1,0 +1,37 @@
+# ==============================================================================
+# Open-Kendo Scoring Weights & Thresholds
+# ==============================================================================
+
+# Pillar 1: Ki-Ken-Tai-Ichi (Overall weight: 45%)
+# Synchronicity between Spirit (Voice/Commitment), Sword (Impact), Body (Foot stomp)
+ki_ken_tai_ichi:
+  weight: 0.45
+  sub_weights:
+    ken_tai_sync: 0.50       # Time alignment between Shinai impact & Fumikomi landing
+    posture_commitment: 0.30  # Spine angle stability during strike moment
+    spirit_energy: 0.20       # Forward momentum / center-of-mass velocity commitment
+  scoring_bands_ms:
+    perfect: 40.0             # <= 40 ms delta -> 100 pts
+    good: 80.0                # <= 80 ms delta -> 85 pts
+    acceptable: 130.0         # <= 130 ms delta -> 65 pts
+    out_of_sync: 200.0        # > 200 ms delta -> 30 pts
+
+# Pillar 2: Dynamic Time Warping (DTW) Kinematic Matching (Overall weight: 35%)
+# Compares joint trajectory profiles against gold-standard master strikes
+kinematic_matching:
+  weight: 0.35
+  joint_weights:
+    right_wrist: 0.25         # Hand snap & cutting arc (Te-no-uchi)
+    left_wrist: 0.20          # Left hand guiding & staying on centerline
+    right_elbow: 0.15         # Arm extension at strike apex
+    spine_angle: 0.20         # Upright posture (no forward slouching)
+    right_ankle: 0.20         # Stride height and foot driving force
+
+# Pillar 3: Form Quality & Zanshin (Overall weight: 20%)
+# Strike completion, follow-through, and physical readiness
+form_and_zanshin:
+  weight: 0.20
+  sub_weights:
+    arm_extension: 0.35       # Elbow angle near full extension at impact (~160-175 deg)
+    back_heel_grounded: 0.25  # Left foot not lifting excessively off ground
+    zanshin_recovery: 0.40    # Immediate recovery back to chudan-no-kamae or forward push

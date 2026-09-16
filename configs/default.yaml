@@ -1,0 +1,68 @@
+# ==============================================================================
+# Open-Kendo Default Configuration
+# ==============================================================================
+
+system:
+  device: "cuda"  # "cuda" | "cpu" | "mps"
+  seed: 42
+  debug: false
+
+camera:
+  source: 0  # Camera index or video file path (e.g., "data/raw/suburi_sample.mp4")
+  width: 1280
+  height: 720
+  fps: 60
+  auto_exposure: true
+
+perception:
+  pose_backend: "mediapipe"  # "mediapipe" | "yolo"
+  mediapipe:
+    model_complexity: 2      # 0: Lite, 1: Full, 2: Heavy
+    min_detection_confidence: 0.7
+    min_tracking_confidence: 0.7
+    enable_segmentation: false
+  yolo:
+    model_path: "models/yolov8n-pose.pt"
+    confidence_threshold: 0.6
+    device: "cuda"
+
+  shinai_tracker:
+    method: "color_geometry"  # "color_geometry" | "yolo_detector" | "optical_flow"
+    hsv_bounds:
+      lower: [15, 60, 60]     # Bamboo yellow / grip tape HSV filter
+      upper: [35, 255, 255]
+    min_contour_area: 150
+    track_history_length: 30
+
+features:
+  trajectory:
+    buffer_size: 60           # Store last N frames of keypoints
+    smoothing_method: "moving_average"  # "moving_average" | "savitzky_golay" | "kalman"
+    smoothing_window: 5
+  footwork:
+    stomp_acceleration_threshold: 12.5  # m/s^2 or pixel velocity spike
+    landing_height_tolerance: 0.05      # Normalized coordinate tolerance
+
+evaluation:
+  target_technique: "men"     # "men" | "kote" | "do" | "tsuki"
+  kikentaichi:
+    tolerance_ms: 120.0       # Max allowable time delta between Ken & Tai to consider "Ichi"
+    strict_window_ms: 60.0    # Window for perfect score
+  dtw:
+    reference_path: "data/gold_standards/men_uchikomi_sensei.npz"
+    distance_metric: "euclidean"
+    radius: 10                # FastDTW search radius constraint
+
+ui:
+  window_name: "Open-Kendo Real-time Analysis"
+  display_width: 1280
+  display_height: 720
+  colors:
+    skeleton: [0, 255, 128]       # BGR: Light Green
+    shinai: [0, 200, 255]         # BGR: Orange
+    fumikomi_alert: [0, 0, 255]   # BGR: Red
+    hud_bg: [25, 25, 25]          # BGR: Dark Grey
+  show_skeleton: true
+  show_shinai_trajectory: true
+  show_hud: true
+  show_fps: true
