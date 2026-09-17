@@ -1,27 +1,61 @@
-"""Weighted multi-criteria scoring engine for Kendo performance."""
+"""Integrated scoring engine combining Kamae, Execution, and Zanshin."""
 
 from typing import Any, Dict, Optional
 
 from open_kendo.evaluation.dtw_matcher import DTWMatchResult
 from open_kendo.evaluation.kikentaichi import KiKenTaiIchiResult
 from open_kendo.evaluation.models import (
+    ExecutionEvaluationResult,
+    IntegratedScoreResult,
+    KamaeEvaluationResult,
     KendoStrikeType,
     StrikeEvaluationResult,
-    TechniqueScore,
+    ZanshinEvaluationResult,
 )
 from open_kendo.features.kinematics import KinematicSnapshot
 
 
 class KendoScorer:
-    """Calculates overall scores combining synchronization, kinematics, and form."""
+    """Calculates overall integrated score across the 3-phase strike lifecycle.
+
+    Score = (w_kamae * S_kamae) + (w_exec * S_exec) + (w_zanshin * S_zanshin)
+    """
 
     def __init__(self, weights_config: Optional[Dict[str, Any]] = None) -> None:
-        """Initialize scoring engine with relative pillar weights.
+        """Initialize scoring engine with weights configuration.
 
         Args:
             weights_config: Dictionary matching configs/weights.yaml structure.
         """
         self.weights_config = weights_config or {}
+        self.w_kamae: float = self.weights_config.get("kamae", {}).get("weight", 0.25)
+        self.w_exec: float = self.weights_config.get("motion_execution", {}).get("weight", 0.50)
+        self.w_zanshin: float = self.weights_config.get("zanshin", {}).get("weight", 0.25)
+
+    def score_integrated_strike(
+        self,
+        target: KendoStrikeType,
+        kamae_result: KamaeEvaluationResult,
+        execution_result: ExecutionEvaluationResult,
+        zanshin_result: ZanshinEvaluationResult,
+        dtw_result: Optional[DTWMatchResult] = None,
+    ) -> IntegratedScoreResult:
+        """Synthesize overall score across the 3 phases and generate coaching notes.
+
+        Args:
+            target: Target strike (Men, Kote, Do, Tsuki, Suburi).
+            kamae_result: Evaluation of Phase 1: Pre-Attack Kamae.
+            execution_result: Evaluation of Phase 2: Motion Execution.
+            zanshin_result: Evaluation of Phase 3: Post-Attack Zanshin.
+            dtw_result: Optional DTW similarity to master strike.
+
+        Returns:
+            IntegratedScoreResult: Aggregated score and phase breakdowns.
+
+        Raises:
+            NotImplementedError: Template shell awaiting implementation.
+        """
+        raise NotImplementedError("KendoScorer.score_integrated_strike is not implemented.")
 
     def score_strike(
         self,
@@ -31,38 +65,23 @@ class KendoScorer:
         impact_posture: Optional[KinematicSnapshot] = None,
         zanshin_posture: Optional[KinematicSnapshot] = None,
     ) -> StrikeEvaluationResult:
-        """Synthesize overall score and generate tactical coaching feedback.
-
-        Args:
-            target: Target hit (Men, Kote, Do, Tsuki).
-            kikentaichi: Result of Ki-Ken-Tai synchronization analysis.
-            dtw_result: Optional DTW similarity to master strike.
-            impact_posture: Posture metrics at the moment of impact.
-            zanshin_posture: Posture metrics during follow-through (Zanshin).
-
-        Returns:
-            StrikeEvaluationResult: Aggregated score, pillar breakdown, and Ippon verdict.
+        """Legacy / single-event strike scoring adapter.
 
         Raises:
             NotImplementedError: Template shell awaiting implementation.
         """
         raise NotImplementedError("KendoScorer.score_strike is not implemented.")
 
-    def evaluate_ippon_validity(self, result: StrikeEvaluationResult) -> bool:
-        """Determine if a strike meets the stringent criteria of Yuko-datotsu (valid point).
-
-        Criteria in Kendo regulations:
-        1. Correct blade contact (Datotsu-bu with Hasuji).
-        2. Full Ki-Ken-Tai-Ichi synchronicity.
-        3. Strong spirit and proper Zanshin without defensive panic.
+    def evaluate_validity(self, result: IntegratedScoreResult) -> bool:
+        """Determine if a strike meets the stringent criteria of valid pedagogical technique.
 
         Args:
             result: Comprehensive strike evaluation report.
 
         Returns:
-            bool: True if eligible for Ippon flag.
+            bool: True if eligible for pass / valid mark.
 
         Raises:
             NotImplementedError: Template shell awaiting implementation.
         """
-        raise NotImplementedError("KendoScorer.evaluate_ippon_validity is not implemented.")
+        raise NotImplementedError("KendoScorer.evaluate_validity is not implemented.")

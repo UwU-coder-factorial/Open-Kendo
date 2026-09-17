@@ -8,7 +8,7 @@ system:
   debug: false
 
 camera:
-  source: 0  # Camera index or video file path (e.g., "data/raw/suburi_sample.mp4")
+  source: 0  # Camera index or video file path (e.g., "data/raw/sample2_kendo_basics_shomen_uchi.mp4")
   width: 1280
   height: 720
   fps: 60
@@ -43,15 +43,31 @@ features:
     stomp_acceleration_threshold: 12.5  # m/s^2 or pixel velocity spike
     landing_height_tolerance: 0.05      # Normalized coordinate tolerance
 
+lifecycle:
+  min_kamae_hold_frames: 15           # Frames required to confirm steady Kamae (~250ms at 60fps)
+  execution_trigger_velocity: 6.5     # Sword upward/forward velocity threshold to enter Execution
+  impact_apex_window_frames: 30       # Search window for strike apex impact
+  zanshin_recovery_timeout_sec: 1.5   # Max allowed time to establish post-strike Zanshin
+
 evaluation:
-  target_technique: "men"     # "men" | "kote" | "do" | "tsuki"
-  kikentaichi:
-    tolerance_ms: 120.0       # Max allowable time delta between Ken & Tai to consider "Ichi"
-    strict_window_ms: 60.0    # Window for perfect score
+  target_technique: "men"     # "men" | "kote" | "do" | "tsuki" | "suburi"
+  kamae:
+    max_spine_tilt_deg: 3.5           # Max allowable vertical spine tilt in Kamae
+    stance_width_ratio_min: 0.22      # Min foot distance relative to body height
+    stance_width_ratio_max: 0.35      # Max foot distance
+  motion_execution:
+    max_dynamic_spine_tilt_deg: 5.0   # Max spine deviation during swing/cut
+    max_head_tilt_deg: 4.0            # Max head roll angle
+    kikentaichi:
+      tolerance_ms: 120.0             # Max allowable time delta between Ken & Tai
+      strict_window_ms: 40.0          # Perfect score window
+  zanshin:
+    max_recovery_duration_sec: 0.8    # Return to Kamae within 0.8s
+    max_kensen_offset_deg: 5.0        # Sword tip deviation from target
   dtw:
-    reference_path: "data/gold_standards/men_uchikomi_sensei.npz"
+    reference_path: "data/gold_standards/men_kihon_sensei.npz"
     distance_metric: "euclidean"
-    radius: 10                # FastDTW search radius constraint
+    radius: 10
 
 ui:
   window_name: "Open-Kendo Real-time Analysis"
@@ -66,3 +82,4 @@ ui:
   show_shinai_trajectory: true
   show_hud: true
   show_fps: true
+  show_lifecycle_badge: true

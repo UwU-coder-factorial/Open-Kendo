@@ -1,6 +1,13 @@
 """Main entry point script for real-time live Kendo analysis.
 
-Connects Camera -> Perception -> Feature Extraction -> Ki-Ken-Tai-Ichi Evaluation -> UI Overlay.
+Architecture Pipeline:
+  Camera Input (60 FPS)
+    -> Pose & Shinai Extraction (MediaPipe/YOLO)
+      -> State & Motion Lifecycle Tracker (FSM)
+        ├─ Phase 1: Pre-Attack Kamae (Spine straight, stance width, arm angles)
+        ├─ Phase 2: Motion Execution (Spine stability, head level, Ki-Ken-Tai-Ichi)
+        └─ Phase 3: Post-Attack Zanshin (Recovery, Kensen on target, readiness)
+    -> Integrated Score & Continuous Feedback
 """
 
 import argparse
@@ -19,7 +26,7 @@ from open_kendo.utils.logger import setup_logger
 def parse_args() -> argparse.Namespace:
     """Parse command line arguments for live runner."""
     parser = argparse.ArgumentParser(
-        description="Open-Kendo: Real-time Kendo Technique Analysis"
+        description="Open-Kendo: Real-time Kendo Technique Analysis (3-Phase Lifecycle)"
     )
     parser.add_argument(
         "--config",
@@ -43,28 +50,33 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
-    """Main execution loop (skeleton).
+    """Main execution loop template.
 
     Raises:
         NotImplementedError: Template shell awaiting implementation.
     """
     args = parse_args()
     logger = setup_logger("open_kendo.live")
-    logger.info("Initializing Open-Kendo Live Analysis System...")
+    logger.info("Initializing Open-Kendo Live Analysis System (3-Phase Lifecycle)...")
 
     config = ConfigLoader.load_yaml(args.config)
-    logger.info(f"Loaded configuration from: {args.config}")
+    weights = ConfigLoader.load_yaml(args.weights)
+    logger.info(f"Loaded configuration: {args.config} and weights: {args.weights}")
 
-    # Pipeline initialization placeholder:
-    # 1. Initialize VideoReader(source)
-    # 2. Initialize PoseEstimator (MediaPipe / YOLO)
-    # 3. Initialize ShinaiTracker
-    # 4. Initialize Feature Calculators (Kinematics, Trajectory, Footwork)
-    # 5. Initialize Evaluators (KiKenTaiIchi, DTW, Scorer)
-    # 6. Initialize UI Overlay & HUD
+    # Pipeline template blueprint:
+    # 1. VideoReader(source, target_fps=60)
+    # 2. BasePoseEstimator (MediaPipePoseEstimator / YOLOPoseEstimator)
+    # 3. ShinaiTracker()
+    # 4. StateLifecycleTracker(config["lifecycle"])
+    # 5. Phase Evaluators:
+    #    - KamaeEvaluator(config["evaluation"]["kamae"])
+    #    - KiKenTaiIchiEvaluator(config["evaluation"]["motion_execution"])
+    #    - ZanshinEvaluator(config["evaluation"]["zanshin"])
+    #    - KendoScorer(weights)
+    # 6. FeedbackDashboard & VisualOverlayDrawer
 
     raise NotImplementedError(
-        "Open-Kendo live pipeline main loop is a template shell. "
+        "Open-Kendo 3-Phase Lifecycle live pipeline loop is a template shell. "
         "Implement video processing loop in scripts/run_live.py."
     )
 
