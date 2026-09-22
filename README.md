@@ -1,4 +1,4 @@
-# Open-Kendo 🥋⚡
+# Open-Kendo
 
 > **Real-time Computer Vision & Kinematic Analysis Framework for Kendo Martial Arts**  
 > Focused on Pedagogical Training Form (Kihon-waza) & 3-Phase Motion Lifecycle Analysis.
@@ -11,21 +11,21 @@
 
 ---
 
-## 📌 Overview & Problem Statement
+## Overview & Problem Statement
 
 In **Kendo (剣道 - The Way of the Sword)**, training is fundamentally pedagogical: execution is not judged merely on striking speed or contact registration, but on adherence to correct form throughout the entire strike lifecycle:
 
-1. **Pre-Attack Kamae (Thế thủ chuẩn bị)**: Straight vertical spine, balanced stance, grounded left heel, and centered sword tip threatening the opponent's centerline.
-2. **Motion Execution (Phát lực & Chém)**: Maintaining an upright spine without leaning backward or lunging forward, steady eye-line without head tilting, and strict **Ki-Ken-Tai-Ichi (気剣体一致 - Spirit, Sword, and Body as One)** synchronization.
-3. **Post-Attack Zanshin (Kiểm soát hậu đòn đánh)**: Prompt recovery back into Kamae, sword tip immediately dominating the centerline, and mental readiness for the next encounter.
+1. **Pre-Attack Kamae**: Straight vertical spine, balanced stance, grounded left heel, and centered sword tip threatening the opponent's centerline.
+2. **Motion Execution**: Maintaining an upright spine without leaning backward or lunging forward, steady eye-line without head tilting, and strict **Ki-Ken-Tai-Ichi (気剣体一致 - Spirit, Sword, and Body as One)** synchronization.
+3. **Post-Attack Zanshin**: Prompt recovery back into Kamae, sword tip immediately dominating the centerline, and mental readiness for the next encounter.
 
 **Open-Kendo** is an open-source, modular Computer Vision template framework designed to analyze live 60 FPS camera feeds and provide continuous, structured feedback on all 3 phases of Kendo strikes.
 
-> 📖 **Full Architectural Specification**: See [docs/architecture.md](docs/architecture.md) for mathematical formulas, state machine contracts, and scoring thresholds.
+> **Full Architectural Specification**: See [docs/architecture.md](docs/architecture.md) for mathematical formulas, state machine contracts, and scoring thresholds.
 
 ---
 
-## 🏗️ 3-Phase State & Motion Lifecycle Architecture
+## 3-Phase State & Motion Lifecycle Architecture
 
 ```text
 ┌────────────────────────────────────────────────────────┐
@@ -45,10 +45,10 @@ In **Kendo (剣道 - The Way of the Sword)**, training is fundamentally pedagogi
 ┌───────────────────────────┼────────────────────────────┐
 │                           │                            │
 ▼                           ▼                            ▼
-[PHA 1: PRE-ATTACK KAMAE]   [PHA 2: MOTION EXECUTION]   [PHA 3: POST-ATTACK ZANSHIN]
-  • Trục lưng thẳng           • Trục lưng không ngả       • Rút về Kamae chuẩn
-  • Khoảng cách 2 chân        • Đầu không lắc nghiêng     • Mũi kiếm hướng mục tiêu
-  • Góc 2 tay chuẩn           • Đo đạc Ki-Ken-Tai-Ichi    • Sẵn sàng đòn tiếp theo
+[PHASE 1: PRE-ATTACK KAMAE] [PHASE 2: MOTION EXECUTION]  [PHASE 3: POST-ATTACK ZANSHIN]
+  • Vertical spine posture    • Upright trunk posture      • Prompt Kamae recovery
+  • Balanced stance width     • Stable head and eye-line   • Centerline dominance
+  • Correct arm geometry      • Ki-Ken-Tai-Ichi timing     • Ready for next strike
 │                           │                            │
 └───────────────────────────┼────────────────────────────┘
                             │
@@ -62,20 +62,20 @@ In **Kendo (剣道 - The Way of the Sword)**, training is fundamentally pedagogi
 
 ---
 
-## 🌟 Core Features
+## Core Features
 
-- **🦾 Multi-backend Pose Estimation**: Standardized wrapper supporting Google **MediaPipe** (low-latency CPU/edge) and **Ultralytics YOLO-Pose** (high-accuracy GPU inference).
-- **🗡️ Shinai & Kensen Tracking**: Continuous tracking of the bamboo sword tip (*Kensen*), hand grip (*Tsuka*), and blade trajectory ribbon (*Hasuji* alignment).
-- **🔄 State & Motion Lifecycle Tracker**: Finite State Machine (FSM) detecting transitions between *Kamae* $\rightarrow$ *Execution* $\rightarrow$ *Zanshin*.
-- **⚡ Ki-Ken-Tai-Ichi Event Timing**: Millisecond-level synchronization detection measuring $\Delta t = |t_{\text{Ken}} - t_{\text{Tai}}|$ between sword apex impact and Fumikomi stomp landing.
-- **📊 Dynamic Time Warping (DTW) Kinematic Matching**: Compares student joint angular velocities against high-dan Sensei reference strikes.
-- **🎯 3-Phase Integrated Scoring**:
+- **Multi-backend Pose Estimation**: Standardized wrapper supporting Google **MediaPipe** (low-latency CPU/edge) and **Ultralytics YOLO-Pose** (high-accuracy GPU inference).
+- **Shinai & Kensen Tracking**: Continuous tracking of the bamboo sword tip (*Kensen*), hand grip (*Tsuka*), and blade trajectory ribbon (*Hasuji* alignment).
+- **State & Motion Lifecycle Tracker**: Finite State Machine (FSM) detecting transitions between *Kamae* $\rightarrow$ *Execution* $\rightarrow$ *Zanshin*.
+- **Ki-Ken-Tai-Ichi Event Timing**: Millisecond-level synchronization detection measuring $\Delta t = |t_{\text{Ken}} - t_{\text{Tai}}|$ between sword apex impact and Fumikomi stomp landing.
+- **Dynamic Time Warping (DTW) Kinematic Matching**: Compares student joint angular velocities against high-dan Sensei reference strikes.
+- **3-Phase Integrated Scoring**:
   $$\text{Total Score} = w_{\text{kamae}} \cdot S_{\text{kamae}} + w_{\text{exec}} \cdot S_{\text{exec}} + w_{\text{zanshin}} \cdot S_{\text{zanshin}}$$
-- **🖥️ Real-time OpenCV HUD Dashboard**: Visual overlays displaying live skeleton feedback, trajectory ribbons, sync status gauges, and lifecycle state badges.
+- **Real-time OpenCV HUD Dashboard**: Visual overlays displaying live skeleton feedback, trajectory ribbons, sync status gauges, and lifecycle state badges.
 
 ---
 
-## 📂 Directory Structure Map
+## Directory Structure Map
 
 ```text
 Open-Kendo/
@@ -138,7 +138,7 @@ Open-Kendo/
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Prerequisites
 
@@ -199,7 +199,7 @@ pytest -v tests/
 
 ---
 
-## 🗺️ Project Roadmap
+## Project Roadmap
 
 - [x] **Phase 1: Architecture Specification & Template Scaffold (Completed)**
   - [x] Establish 3-Phase State & Motion Lifecycle pipeline.
@@ -220,6 +220,6 @@ pytest -v tests/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).

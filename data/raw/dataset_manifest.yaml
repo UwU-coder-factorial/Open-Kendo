@@ -1,0 +1,153 @@
+# ==============================================================================
+# Open-Kendo Raw Dataset Manifest & Labels
+# Catalog of collected raw videos and images categorized by strike technique
+# ==============================================================================
+
+version: "2.1"
+dataset_name: "open-kendo-raw-benchmark"
+
+techniques:
+  # ----------------------------------------------------------------------------
+  # 1. Men-uchi (Forward Step Strike with Fumikomi-ashi)
+  # ----------------------------------------------------------------------------
+  men_uchi:
+    description: "Forward-driving Men strike combining Fumikomi-ashi foot stomp and Ki-Ken-Tai-Ichi synchronicity"
+    target_phase: "motion_execution"
+    items:
+      - file: "mokkei_part1_men_uchi_60fps.mp4"
+        format: "video"
+        title: "Basics of Mokkei Part 1: Men-uchi"
+        author: "Mokkei Kendo Research Institute (@mokkeikendo)"
+        resolution: [1280, 720]
+        fps: 60.0
+        duration_sec: 411.0
+        role: "primary_men_uchi_benchmark"
+        recommended_segments_sec:
+          - start: 45.0
+            end: 80.0
+            note: "Sensei slow-paced full Men-uchi strike with Fumikomi"
+          - start: 160.0
+            end: 210.0
+            note: "Footwork and Ken-Tai synchronization breakdown at true 60 FPS"
+
+      - file: "sample1_kendo_highspeed_slowmo.mp4"
+        format: "video"
+        title: "Kendo in High Speed Camera (Slow Motion)"
+        resolution: [1440, 1080]
+        fps: 30.0
+        duration_sec: 318.0
+        role: "impact_apex_slowmo_reference"
+        recommended_segments_sec:
+          - start: 20.0
+            end: 50.0
+            note: "Datotsu-bu blade flex and impact moment"
+
+  # ----------------------------------------------------------------------------
+  # 2. Suburi Men (Stationary Overhead Strike Practice)
+  # ----------------------------------------------------------------------------
+  suburi_men:
+    description: "Stationary overhead cutting mechanics (Tandoku Dosa / Shomen-uchi Suburi) without lunging steps"
+    target_phase: "motion_execution"
+    items:
+      - file: "sample2_kendo_basics_shomen_uchi.mp4"
+        format: "video"
+        title: "Kendo Basics III: Tandoku Dosa: Shomen Uchi Important Points"
+        resolution: [1920, 1080]
+        fps: 30.0
+        duration_sec: 157.0
+        role: "primary_suburi_men_benchmark"
+        recommended_segments_sec:
+          - start: 15.0
+            end: 65.0
+            note: "Continuous stationary Shomen-uchi Suburi repetitions"
+
+      - file: "mokkei_kihon01_kamae_suburi.mp4"
+        format: "video"
+        title: "Kihon Do Mokkei #01: Segurar Shinai, Fazer Kamae e Suburi"
+        author: "Mokkei Kendo Research Institute"
+        resolution: [1280, 720]
+        fps: 30.0
+        duration_sec: 478.0
+        role: "suburi_mechanics_breakdown"
+        recommended_segments_sec:
+          - start: 240.0
+            end: 360.0
+            note: "Suburi swing arc, arm extension and Tenouchi snap"
+
+  # ----------------------------------------------------------------------------
+  # 3. Kamae (Phase 1: Pre-Attack Chūdan-no-kamae Fighting Stance)
+  # ----------------------------------------------------------------------------
+  kamae:
+    description: "Canonical Chūdan-no-kamae fighting stance: Upright spine, balanced stance width, left heel slightly raised, sword tip at throat level"
+    target_phase: "pre_attack_kamae"
+    items:
+      - file: "kamae/kamae_koda_sensei_lateral_ideal.jpg"
+        format: "image"
+        source: "Kendo Jidai International (Koda Kunihide Hanshi 8th Dan)"
+        url: "https://kendojidai.com/2024/08/12/how-to-create-an-ideal-kamae-koda-kunihide/"
+        label: "kamae_koda_sensei_lateral_ideal"
+        resolution: [2000, 1333]
+        role: "gold_standard_lateral"
+        posture_notes: "Koda Kunihide Sensei: Vertical spine, balanced stance, left heel slightly raised, sword pointed upward at opponent throat"
+
+      - file: "kamae/kamae-front.jpg"
+        format: "image"
+        source: "Kendo Jidai International: Unity of Offense and Defense"
+        url: "https://kendojidai.com/2020/05/11/unity-of-offense-and-defense/"
+        label: "kamae_front_centerline"
+        resolution: [679, 452]
+        role: "gold_standard_frontal"
+        posture_notes: "Frontal centerline alignment, left fist one fist-width in front of navel, relaxed shoulders"
+
+      - file: "kamae/Screenshot 2026-09-17 090750.png"
+        format: "image"
+        source: "The Kendo Show: Fighting Stance, or Kamae and Sonkyo"
+        url: "https://www.youtube.com/watch?v=0Hat0im3zt0"
+        label: "kamae_kendo_show_breakdown"
+        resolution: [2880, 1622]
+        role: "instructional_comparison"
+        posture_notes: "High-clarity instructional stance breakdown comparing full-body posture, elbow angles, and footwork foundation"
+
+      - file: "kamae/kamae_eiga_sensei_ideal.jpg"
+        format: "image"
+        source: "Kendo Jidai International (Eiga Naoki Kyoshi 8th Dan)"
+        url: "https://kendojidai.com/2024/08/19/how-to-create-an-ideal-kamae-eiga-naoki/"
+        label: "kamae_eiga_sensei_ideal"
+        resolution: [2000, 1333]
+        role: "champion_form_reference"
+        posture_notes: "World Champion Eiga Naoki Sensei: Full Bogu attire demonstration showing upright posture and forward pressure"
+
+      - file: "kamae/kamae_hojo_sensei_ideal.jpg"
+        format: "image"
+        source: "Kendo Jidai International (Hojo Masaomi Kyoshi 8th Dan)"
+        url: "https://kendojidai.com/2024/09/09/how-to-create-an-ideal-kamae-hojo-masaomi/"
+        label: "kamae_hojo_sensei_ideal"
+        resolution: [2000, 1331]
+        role: "seme_omote_reference"
+        posture_notes: "Hojo Masaomi Sensei: Centerline dominance and grounded left foot stance"
+
+      - file: "kamae/kamae_okido_sensei_ideal.jpg"
+        format: "image"
+        source: "Kendo Jidai International (Okido Satoru Kyoshi 8th Dan)"
+        url: "https://kendojidai.com/2024/08/26/how-to-create-an-ideal-kamae-okido-satoru/"
+        label: "kamae_okido_sensei_ideal"
+        resolution: [2000, 1331]
+        role: "posture_stability_reference"
+        posture_notes: "Okido Satoru Sensei: Core stability, relaxed shoulder line, and balanced weight distribution"
+
+# ------------------------------------------------------------------------------
+# 4. Sliced Video Benchmark Segments (for rapid testing & evaluation)
+# ------------------------------------------------------------------------------
+sliced_benchmark_segments:
+  directory: "data/segments"
+  catalog_file: "data/segments/segments_catalog.json"
+  total_segments: 8
+  clips:
+    - "mokkei_kihon01_04m09s_04m26s_shomen_frontview.mp4"
+    - "mokkei_kihon01_07m28s_07m31s_suburi_sideview.mp4"
+    - "mokkei_part1_00m05s_00m14s_men_uchi_sideview_R2L.mp4"
+    - "mokkei_part1_00m16s_00m25s_men_uchi_sideview_L2R.mp4"
+    - "mokkei_part1_04m39s_04m45s_men_uchi_frontview_occluded.mp4"
+    - "mokkei_part1_04m45s_04m50s_men_uchi_backview.mp4"
+    - "sample2_basics_00m42s_00m49s_shomen_frontview_45deg.mp4"
+    - "sample2_basics_01m55s_02m00s_shomen_sideview.mp4"

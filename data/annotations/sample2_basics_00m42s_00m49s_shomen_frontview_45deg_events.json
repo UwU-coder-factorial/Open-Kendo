@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "source_video": "sample2_basics_00m42s_00m49s_shomen_frontview_45deg.mp4",
+    "annotated_at": "2026-09-21T04:41:16.044472+00:00",
+    "fps": 29.97,
+    "total_frames": 210,
+    "duration_sec": 7.007,
+    "total_repetitions": 4
+  },
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 32,
+          "timestamp_sec": 1.0677,
+          "timestamp_formatted": "00:01.068"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 56,
+          "timestamp_sec": 1.8685,
+          "timestamp_formatted": "00:01.869"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 71,
+          "timestamp_sec": 2.369,
+          "timestamp_formatted": "00:02.369"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 75,
+          "timestamp_sec": 2.5025,
+          "timestamp_formatted": "00:02.502"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.3013,
+        "swing_duration_ms": 1301.3
+      }
+    },
+    {
+      "rep_id": 2,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 76,
+          "timestamp_sec": 2.5359,
+          "timestamp_formatted": "00:02.536"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 100,
+          "timestamp_sec": 3.3367,
+          "timestamp_formatted": "00:03.337"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 116,
+          "timestamp_sec": 3.8705,
+          "timestamp_formatted": "00:03.871"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 117,
+          "timestamp_sec": 3.9039,
+          "timestamp_formatted": "00:03.904"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.3347,
+        "swing_duration_ms": 1334.7
+      }
+    },
+    {
+      "rep_id": 3,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 118,
+          "timestamp_sec": 3.9373,
+          "timestamp_formatted": "00:03.937"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 140,
+          "timestamp_sec": 4.6713,
+          "timestamp_formatted": "00:04.671"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 156,
+          "timestamp_sec": 5.2052,
+          "timestamp_formatted": "00:05.205"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 159,
+          "timestamp_sec": 5.3053,
+          "timestamp_formatted": "00:05.305"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2679,
+        "swing_duration_ms": 1267.9
+      }
+    },
+    {
+      "rep_id": 4,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 160,
+          "timestamp_sec": 5.3387,
+          "timestamp_formatted": "00:05.339"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 182,
+          "timestamp_sec": 6.0727,
+          "timestamp_formatted": "00:06.073"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 195,
+          "timestamp_sec": 6.5065,
+          "timestamp_formatted": "00:06.506"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 197,
+          "timestamp_sec": 6.5732,
+          "timestamp_formatted": "00:06.573"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.1678,
+        "swing_duration_ms": 1167.8
+      }
+    }
+  ]
+}

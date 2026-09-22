@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "source_video": "mokkei_part1_04m39s_04m45s_men_uchi_frontview_occluded.mp4",
+    "annotated_at": "2026-09-21T04:29:38.986734+00:00",
+    "fps": 59.94,
+    "total_frames": 360,
+    "duration_sec": 6.006,
+    "total_repetitions": 1
+  },
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "events": [],
+      "metrics": {}
+    }
+  ]
+}

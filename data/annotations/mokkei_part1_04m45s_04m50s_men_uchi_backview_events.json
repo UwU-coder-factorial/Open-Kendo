@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "source_video": "mokkei_part1_04m45s_04m50s_men_uchi_backview.mp4",
+    "annotated_at": "2026-09-21T04:31:23.531459+00:00",
+    "fps": 59.94,
+    "total_frames": 300,
+    "duration_sec": 5.005,
+    "total_repetitions": 1
+  },
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 133,
+          "timestamp_sec": 2.2189,
+          "timestamp_formatted": "00:02.219"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 152,
+          "timestamp_sec": 2.5359,
+          "timestamp_formatted": "00:02.536"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 159,
+          "timestamp_sec": 2.6526,
+          "timestamp_formatted": "00:02.653"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 299,
+          "timestamp_sec": 4.9883,
+          "timestamp_formatted": "00:04.988"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 2.7694,
+        "swing_duration_ms": 2769.4,
+        "kikentai_analysis": {
+          "fumikomi_frame": 159,
+          "impact_frame": 299,
+          "delta_frames": 140,
+          "delta_time_ms": 2335.67,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    }
+  ]
+}

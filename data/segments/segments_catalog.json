@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "Open-Kendo Sliced Benchmark Video Segments",
+    "created_at": "2026-09-17T09:41:32.539639+00:00",
+    "engine_used": "ffmpeg",
+    "total_segments": 8,
+    "output_directory": "data/segments"
+  },
+  "segments": [
+    {
+      "source_video": "mokkei_kihon01_kamae_suburi.mp4",
+      "output_filename": "mokkei_kihon01_04m09s_04m26s_shomen_frontview.mp4",
+      "start_time": "04:09",
+      "end_time": "04:26",
+      "technique": "shomen_suburi",
+      "view_angle": "frontview",
+      "description": "Shomen-uchi Suburi repetitions viewed from direct front perspective.",
+      "tags": [
+        "suburi",
+        "frontview",
+        "shomen"
+      ],
+      "start_sec": 249.0,
+      "end_sec": 266.0,
+      "actual_duration_sec": 17.02,
+      "width": 1280,
+      "height": 720,
+      "fps": 29.97,
+      "frame_count": 510,
+      "file_size_mb": 1.66,
+      "file_path": "data/segments/mokkei_kihon01_04m09s_04m26s_shomen_frontview.mp4"
+    },
+    {
+      "source_video": "mokkei_kihon01_kamae_suburi.mp4",
+      "output_filename": "mokkei_kihon01_07m28s_07m31s_suburi_sideview.mp4",
+      "start_time": "07:28",
+      "end_time": "07:31",
+      "technique": "suburi",
+      "view_angle": "sideview",
+      "description": "Suburi arm extension and stance alignment viewed from the lateral/side angle.",
+      "tags": [
+        "suburi",
+        "sideview",
+        "lateral"
+      ],
+      "start_sec": 448.0,
+      "end_sec": 451.0,
+      "actual_duration_sec": 3.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 29.97,
+      "frame_count": 90,
+      "file_size_mb": 0.81,
+      "file_path": "data/segments/mokkei_kihon01_07m28s_07m31s_suburi_sideview.mp4"
+    },
+    {
+      "source_video": "mokkei_part1_men_uchi_60fps.mp4",
+      "output_filename": "mokkei_part1_00m05s_00m14s_men_uchi_sideview_R2L.mp4",
+      "start_time": "00:05",
+      "end_time": "00:14",
+      "technique": "men_uchi",
+      "view_angle": "sideview",
+      "description": "Men-uchi strike with Fumikomi-ashi, moving from right to left (60 FPS).",
+      "tags": [
+        "men_uchi",
+        "sideview",
+        "fumikomi",
+        "right_to_left",
+        "60fps"
+      ],
+      "start_sec": 5.0,
+      "end_sec": 14.0,
+      "actual_duration_sec": 9.01,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.94,
+      "frame_count": 540,
+      "file_size_mb": 1.41,
+      "file_path": "data/segments/mokkei_part1_00m05s_00m14s_men_uchi_sideview_R2L.mp4"
+    },
+    {
+      "source_video": "mokkei_part1_men_uchi_60fps.mp4",
+      "output_filename": "mokkei_part1_00m16s_00m25s_men_uchi_sideview_L2R.mp4",
+      "start_time": "00:16",
+      "end_time": "00:25",
+      "technique": "men_uchi",
+      "view_angle": "sideview",
+      "description": "Men-uchi strike with Fumikomi-ashi, moving from left to right (60 FPS).",
+      "tags": [
+        "men_uchi",
+        "sideview",
+        "fumikomi",
+        "left_to_right",
+        "60fps"
+      ],
+      "start_sec": 16.0,
+      "end_sec": 25.0,
+      "actual_duration_sec": 9.01,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.94,
+      "frame_count": 540,
+      "file_size_mb": 1.35,
+      "file_path": "data/segments/mokkei_part1_00m16s_00m25s_men_uchi_sideview_L2R.mp4"
+    },
+    {
+      "source_video": "mokkei_part1_men_uchi_60fps.mp4",
+      "output_filename": "mokkei_part1_04m39s_04m45s_men_uchi_frontview_occluded.mp4",
+      "start_time": "04:39",
+      "end_time": "04:45",
+      "technique": "men_uchi",
+      "view_angle": "frontview",
+      "description": "Men-uchi from front perspective partially occluded by motodachi (defender).",
+      "tags": [
+        "men_uchi",
+        "frontview",
+        "occlusion_stress_test"
+      ],
+      "start_sec": 279.0,
+      "end_sec": 285.0,
+      "actual_duration_sec": 6.01,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.94,
+      "frame_count": 360,
+      "file_size_mb": 1.08,
+      "file_path": "data/segments/mokkei_part1_04m39s_04m45s_men_uchi_frontview_occluded.mp4"
+    },
+    {
+      "source_video": "mokkei_part1_men_uchi_60fps.mp4",
+      "output_filename": "mokkei_part1_04m45s_04m50s_men_uchi_backview.mp4",
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "technique": "men_uchi",
+      "view_angle": "backview",
+      "description": "Men-uchi executed viewed directly from the rear / back perspective.",
+      "tags": [
+        "men_uchi",
+        "backview",
+        "zanshin"
+      ],
+      "start_sec": 285.0,
+      "end_sec": 290.0,
+      "actual_duration_sec": 5.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 59.94,
+      "frame_count": 300,
+      "file_size_mb": 1.08,
+      "file_path": "data/segments/mokkei_part1_04m45s_04m50s_men_uchi_backview.mp4"
+    },
+    {
+      "source_video": "sample2_kendo_basics_shomen_uchi.mp4",
+      "output_filename": "sample2_basics_00m42s_00m49s_shomen_frontview_45deg.mp4",
+      "start_time": "00:42",
+      "end_time": "00:49",
+      "technique": "shomen_uchi",
+      "view_angle": "frontview_45deg",
+      "description": "Stationary Shomen-uchi demonstration filmed from ~45 degree front-oblique angle.",
+      "tags": [
+        "shomen_uchi",
+        "frontview_oblique",
+        "tandoku_dosa"
+      ],
+      "start_sec": 42.0,
+      "end_sec": 49.0,
+      "actual_duration_sec": 7.01,
+      "width": 1280,
+      "height": 720,
+      "fps": 29.97,
+      "frame_count": 210,
+      "file_size_mb": 1.32,
+      "file_path": "data/segments/sample2_basics_00m42s_00m49s_shomen_frontview_45deg.mp4"
+    },
+    {
+      "source_video": "sample2_kendo_basics_shomen_uchi.mp4",
+      "output_filename": "sample2_basics_01m55s_02m00s_shomen_sideview.mp4",
+      "start_time": "01:55",
+      "end_time": "02:00",
+      "technique": "shomen_uchi",
+      "view_angle": "sideview",
+      "description": "Stationary Shomen-uchi strike mechanics filmed from true lateral side view.",
+      "tags": [
+        "shomen_uchi",
+        "sideview",
+        "lateral"
+      ],
+      "start_sec": 115.0,
+      "end_sec": 120.0,
+      "actual_duration_sec": 5.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 29.97,
+      "frame_count": 150,
+      "file_size_mb": 0.84,
+      "file_path": "data/segments/sample2_basics_01m55s_02m00s_shomen_sideview.mp4"
+    }
+  ]
+}

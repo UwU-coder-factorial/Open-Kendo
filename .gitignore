@@ -29,12 +29,15 @@ ENV/
 env.bak/
 venv.bak/
 
-# IDE / Editor
+# IDE / Editor / Agents
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.agent/
+.agents/
+.gemini/
 
 # Testing & Coverage
 .pytest_cache/
@@ -43,19 +46,32 @@ htmlcov/
 .tox/
 .nox/
 
-# Media / Model Weights / Heavy Data
+# Media / Model Weights
 models/*.pt
 models/*.onnx
 models/*.engine
 models/*.tflite
-data/raw/*
-!data/raw/.gitkeep
-data/outputs/*
-!data/outputs/.gitkeep
+models/*.task
+!models/pose_landmarker_heavy.task
+
+# Heavy video files
 *.mp4
 *.avi
 *.mov
 *.mkv
+*.webm
+
+# Data folders
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+!data/raw/dataset_manifest.yaml
+!data/raw/kamae/
+
+data/outputs/*
+!data/outputs/.gitkeep
+
+data/segments/*.mp4
 
 # OS Specific
 .DS_Store

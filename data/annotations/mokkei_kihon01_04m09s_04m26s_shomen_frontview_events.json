@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "source_video": "mokkei_kihon01_04m09s_04m26s_shomen_frontview.mp4",
+    "annotated_at": "2026-09-21T03:59:10.929488+00:00",
+    "fps": 29.97,
+    "total_frames": 510,
+    "duration_sec": 17.017,
+    "total_repetitions": 9
+  },
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "timestamp_formatted": "00:00.000"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 20,
+          "timestamp_sec": 0.6673,
+          "timestamp_formatted": "00:00.667"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 22,
+          "timestamp_sec": 0.7341,
+          "timestamp_formatted": "00:00.734"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 37,
+          "timestamp_sec": 1.2346,
+          "timestamp_formatted": "00:01.235"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 44,
+          "timestamp_sec": 1.4681,
+          "timestamp_formatted": "00:01.468"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2346,
+        "swing_duration_ms": 1234.6,
+        "kikentai_analysis": {
+          "fumikomi_frame": 22,
+          "impact_frame": 37,
+          "delta_frames": 15,
+          "delta_time_ms": 500.5,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 2,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 47,
+          "timestamp_sec": 1.5682,
+          "timestamp_formatted": "00:01.568"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 62,
+          "timestamp_sec": 2.0687,
+          "timestamp_formatted": "00:02.069"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 66,
+          "timestamp_sec": 2.2022,
+          "timestamp_formatted": "00:02.202"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 84,
+          "timestamp_sec": 2.8028,
+          "timestamp_formatted": "00:02.803"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 92,
+          "timestamp_sec": 3.0697,
+          "timestamp_formatted": "00:03.070"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2346,
+        "swing_duration_ms": 1234.6,
+        "kikentai_analysis": {
+          "fumikomi_frame": 66,
+          "impact_frame": 84,
+          "delta_frames": 18,
+          "delta_time_ms": 600.6,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 3,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 94,
+          "timestamp_sec": 3.1365,
+          "timestamp_formatted": "00:03.136"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 110,
+          "timestamp_sec": 3.6703,
+          "timestamp_formatted": "00:03.670"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 117,
+          "timestamp_sec": 3.9039,
+          "timestamp_formatted": "00:03.904"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 130,
+          "timestamp_sec": 4.3377,
+          "timestamp_formatted": "00:04.338"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 136,
+          "timestamp_sec": 4.5379,
+          "timestamp_formatted": "00:04.538"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2012,
+        "swing_duration_ms": 1201.2,
+        "kikentai_analysis": {
+          "fumikomi_frame": 117,
+          "impact_frame": 130,
+          "delta_frames": 13,
+          "delta_time_ms": 433.77,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 4,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 141,
+          "timestamp_sec": 4.7047,
+          "timestamp_formatted": "00:04.705"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 156,
+          "timestamp_sec": 5.2052,
+          "timestamp_formatted": "00:05.205"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 173,
+          "timestamp_sec": 5.7724,
+          "timestamp_formatted": "00:05.772"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 177,
+          "timestamp_sec": 5.9059,
+          "timestamp_formatted": "00:05.906"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.0677,
+        "swing_duration_ms": 1067.7
+      }
+    },
+    {
+      "rep_id": 5,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 179,
+          "timestamp_sec": 5.9726,
+          "timestamp_formatted": "00:05.973"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 198,
+          "timestamp_sec": 6.6066,
+          "timestamp_formatted": "00:06.607"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 203,
+          "timestamp_sec": 6.7734,
+          "timestamp_formatted": "00:06.773"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 216,
+          "timestamp_sec": 7.2072,
+          "timestamp_formatted": "00:07.207"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 224,
+          "timestamp_sec": 7.4741,
+          "timestamp_formatted": "00:07.474"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2346,
+        "swing_duration_ms": 1234.6,
+        "kikentai_analysis": {
+          "fumikomi_frame": 203,
+          "impact_frame": 216,
+          "delta_frames": 13,
+          "delta_time_ms": 433.77,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 6,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 227,
+          "timestamp_sec": 7.5742,
+          "timestamp_formatted": "00:07.574"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 241,
+          "timestamp_sec": 8.0414,
+          "timestamp_formatted": "00:08.041"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 248,
+          "timestamp_sec": 8.2749,
+          "timestamp_formatted": "00:08.275"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 259,
+          "timestamp_sec": 8.642,
+          "timestamp_formatted": "00:08.642"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 267,
+          "timestamp_sec": 8.9089,
+          "timestamp_formatted": "00:08.909"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.0677,
+        "swing_duration_ms": 1067.7,
+        "kikentai_analysis": {
+          "fumikomi_frame": 248,
+          "impact_frame": 259,
+          "delta_frames": 11,
+          "delta_time_ms": 367.03,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 7,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 269,
+          "timestamp_sec": 8.9756,
+          "timestamp_formatted": "00:08.976"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 284,
+          "timestamp_sec": 9.4761,
+          "timestamp_formatted": "00:09.476"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 288,
+          "timestamp_sec": 9.6096,
+          "timestamp_formatted": "00:09.610"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 303,
+          "timestamp_sec": 10.1101,
+          "timestamp_formatted": "00:10.110"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 310,
+          "timestamp_sec": 10.3437,
+          "timestamp_formatted": "00:10.344"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.1345,
+        "swing_duration_ms": 1134.5,
+        "kikentai_analysis": {
+          "fumikomi_frame": 288,
+          "impact_frame": 303,
+          "delta_frames": 15,
+          "delta_time_ms": 500.5,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    },
+    {
+      "rep_id": 8,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 310,
+          "timestamp_sec": 10.3437,
+          "timestamp_formatted": "00:10.344"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 327,
+          "timestamp_sec": 10.9109,
+          "timestamp_formatted": "00:10.911"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 345,
+          "timestamp_sec": 11.5115,
+          "timestamp_formatted": "00:11.511"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 351,
+          "timestamp_sec": 11.7117,
+          "timestamp_formatted": "00:11.712"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.1678,
+        "swing_duration_ms": 1167.8
+      }
+    },
+    {
+      "rep_id": 9,
+      "events": [
+        {
+          "event_id": "furikaburi_start",
+          "event_name": "Furikaburi Start",
+          "frame_index": 352,
+          "timestamp_sec": 11.7451,
+          "timestamp_formatted": "00:11.745"
+        },
+        {
+          "event_id": "apex_top",
+          "event_name": "Swing Apex (Top)",
+          "frame_index": 370,
+          "timestamp_sec": 12.3457,
+          "timestamp_formatted": "00:12.346"
+        },
+        {
+          "event_id": "fumikomi_landing",
+          "event_name": "Fumikomi Landing (Opt)",
+          "frame_index": 377,
+          "timestamp_sec": 12.5792,
+          "timestamp_formatted": "00:12.579"
+        },
+        {
+          "event_id": "blade_impact",
+          "event_name": "Impact / Tenouchi",
+          "frame_index": 388,
+          "timestamp_sec": 12.9463,
+          "timestamp_formatted": "00:12.946"
+        },
+        {
+          "event_id": "zanshin_complete",
+          "event_name": "Zanshin Complete",
+          "frame_index": 395,
+          "timestamp_sec": 13.1798,
+          "timestamp_formatted": "00:13.180"
+        }
+      ],
+      "metrics": {
+        "swing_duration_sec": 1.2012,
+        "swing_duration_ms": 1201.2,
+        "kikentai_analysis": {
+          "fumikomi_frame": 377,
+          "impact_frame": 388,
+          "delta_frames": 11,
+          "delta_time_ms": 367.03,
+          "evaluation": "LATE_IMPACT (Foot stamped before blade reached target)"
+        }
+      }
+    }
+  ]
+}
